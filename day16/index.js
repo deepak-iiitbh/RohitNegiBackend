@@ -5,6 +5,19 @@ const User = require("./database/user") ;
 
 app.use(express.json());
 
+app.post("/info" , (req , res)=>{
+    try{
+       const info = new User(req.body) ;
+     info.save() ;
+     res.send("info added succesfully") ;
+    }
+    catch{
+        res.errored("error found" , error) ;
+    } ;
+     
+
+})
+
 main().then(async ()=>{
     console.log("connected database succesfully") ;
     app.listen(4000, () => {
