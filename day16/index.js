@@ -27,5 +27,3 @@ main().then(async ()=>{
      const person = await User.find({}) ;
      console.log(person) ; 
 }).catch(error => console.log(error)) ;
-
-
