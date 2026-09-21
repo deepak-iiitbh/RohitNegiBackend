@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 
 async function main() {
-  await mongoose.connect('mongodb+srv://deepak240101266_db_user:seLrXhbJDw37aVB2@codingcamp.6xwbryw.mongodb.net/login');
+  await mongoose.connect('mongodb+srv://deepak240101266_db_user:seLrXhbJDw37aVB2@codingcamp.6xwbryw.mongodb.net/bhenchod');
   
   //model create krna matlab collection create krna aur collection , collection of bson files hoti he
 
