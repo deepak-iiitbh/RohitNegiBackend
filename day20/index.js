@@ -41,7 +41,7 @@ app.post("/login", async(req, res)=>{
         const token = jwt.sign({
             _id: user._id,
             Email: user.Email
-        }, "deepakchaudhary");
+        }, "deepakchaudhary" , {expiresIn:10}); //here 10 is ten second
         res.cookie("token", token);
         
         res.send("login successfully");
