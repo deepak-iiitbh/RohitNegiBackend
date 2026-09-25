@@ -26,7 +26,7 @@ userschema.methods.getJwt = function () {
             _id: this._id,
             Email: this.Email
         },
-        "deepakchaudhary",
+        process.env.KEYEN,
         {
             expiresIn: 100
         }

@@ -3,8 +3,7 @@ const mongoose = require('mongoose');
 
 
 async function main() {
-  await mongoose.connect('mongodb+srv://deepak240101266_db_user:seLrXhbJDw37aVB2@codingcamp.6xwbryw.mongodb.net/instagramuser');
+  await mongoose.connect(process.env.MONGODBURI);
   
- 
 }
 module.exports = main ;
